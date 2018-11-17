@@ -87,4 +87,4 @@ The source to do this are:
 
 To retrieve further informatios, see the comments inside the sources.
 
-                                                                                                                                        Typed by Valerio Paolicelli, Turin 17th November, 2018.
+                                                                  Typed by Valerio Paolicelli, Turin 17th November, 2018.
