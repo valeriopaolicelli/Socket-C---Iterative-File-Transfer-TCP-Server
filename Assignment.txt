@@ -1,5 +1,8 @@
 Assignment (UNIX Environment):
 
+############################### SOURCE 1 ###############################
+############################ SEQUENTIAL SERVER #########################
+#####################################################################
 Develop a TCP sequential server (listening to the port specified as the first parameter of the
 command line, as a decimal integer) that, after having established a TCP connection with a
 client, accepts file transfer requests from the client and sends the requested files back to the
@@ -35,6 +38,19 @@ In case of error (e.g. illegal command, non-existing file) the server always rep
                                 | - | E | R | R | CR | LF |
 (6 characters) and then it closes the connection with the client.
 
+
+############################### SOURCE 2 ###############################
+############################ CONCURRENT SERVER ########################
+#####################################################################
+
+Develop a concurrent TCP server (listening to the port specified as the first parameter of the
+command line, as a decimal integer) that, after having established a TCP connection with a
+client, accepts file transfer requests from the client and sends the requested files back to the
+client, following the same protocol used in SOURCE 1. The server must create
+processes on demand (a new process for each new TCP connection).
+
+
 To compile:
             gcc -std=gnu99 -o server server1/*.c *.c -Iserver1 -lpthread -lm
             gcc -std=gnu99 -o client client1/*.c *.c -Iclient1 -lpthread -lm
+            gcc -std=gnu99 -o server server2/*.c *.c -Iserver2 -lpthread -lm
