@@ -32,15 +32,15 @@ I sorgenti presenti per fare ciò sono:
         - server1_main.c (server sequenziale)
         - server2_main.c (server concorrente)
 
-Per la gestione del socket si è fatto riferimento alle funzioni del testo  ' Stevens, Unix network programming (3ed) ':
-    - sockwrap.c
-    - sockwrap.h
-    - errlib.c
-    - errlib.h
+    Per la gestione del socket si è fatto riferimento alle funzioni del testo  ' Stevens, Unix network programming (3ed) ':
+        - sockwrap.c
+        - sockwrap.h
+        - errlib.c
+        - errlib.h
 
-Per la gestione dei codici di errore, si è creata una libreria per una tabella di simboli, array che per ogni indice contiene un messaggio d'errore:
-    - sterr.c
-    - sterr.h
+    Per la gestione dei codici di errore, si è creata una libreria per una tabella di simboli, array che per ogni indice contiene un messaggio d'errore:
+        - sterr.c
+        - sterr.h
 
 Per ulteriori chiarimenti sulle singole funzioni, consultare i commenti nel codice.
 
@@ -61,6 +61,7 @@ It waits on the specified port number, the client requests, to setup the TCP con
 Overall, there are two TCP server versions, the first one is sequential to accept only one client per time, while the other one is concurrent.
 
 The source to do this are:
+
     My C library -> to create the client object:
         - myclient.c
         - myclient.h
@@ -74,15 +75,15 @@ The source to do this are:
         - server1_main.c (sequential server)
         - server2_main.c (concurrent server)
 
-To manage the socket, I've used the functions of the tesxt book ' Stevens, Unix network programming (3ed) ':
-    - sockwrap.c
-    - sockwrap.h
-    - errlib.c
-    - errlib.h
+    To manage the socket, I've used the functions of the tesxt book ' Stevens, Unix network programming (3ed) ':
+        - sockwrap.c
+        - sockwrap.h
+        - errlib.c
+        - errlib.h
 
-To handle the error codes, I've build a C library with a symbol table, which contains an array where each index is referred to a message error:
-    - sterr.c
-    - sterr.h
+    To handle the error codes, I've build a C library with a symbol table, which contains an array where each index is referred to a message error:
+        - sterr.c
+        - sterr.h
 
 To retrieve further informatios, see the comments inside the sources.
 
